@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="First number" />
+                <TextBox Width="150" Name="txt1"/>
+            </StackPanel >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Second number" />
+                <TextBox Width="150" Name="txt2"/>
+            </StackPanel >
+            <WrapPanel Button.Click="WrapPanel_Click">
+                <Button Width="Auto"
+                        Height="25"
+                        Content="+"
+                        Margin="5" />
+                <Button Width="Auto"
+                        Height="25"
+                        Content="-"
+                        Margin="5" />
+                <Button Width="Auto"
+                        Height="25"
+                        Content="X"
+                        Margin="5" />
+                <Button Width="Auto"
+                        Height="25"
+                        Content="/"
+                        Margin="5" />
+            </WrapPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
