@@ -41,10 +41,11 @@ namespace WPFCalc
                 int result = 0;
                 switch (b.Content.ToString())
                 {
+
                     case "/":
                         if (y == 0)
                         {
-                            MessageBox.Show("Cant divide by zero");
+                            MessageBox.Show("Cant divide by zero!");
                             return;
                         }
                         else
